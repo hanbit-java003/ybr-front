@@ -3,7 +3,7 @@ const path = require('path');
 const utils = require('./webpack.config.utils');
 
 const port = {
-    web: 89,
+    web: 85,
     was: 8080
 };
 
