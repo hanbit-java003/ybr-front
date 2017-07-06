@@ -9,3 +9,120 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+header {
+  position: fixed;//메뉴 고정바
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  z-index: 1000;
+}
+
+.h-tm {
+  position: relative;
+  display: block;
+  height: 50px;
+  background-color: #2c3036;
+  text-align: center;
+  vertical-align: top;
+}
+
+.h-tm-btn {
+  margin: 10px 5px 0 5px;
+  height: 26px;
+  display: inline-block;
+  padding: 0 13px 0 13px;
+  border-radius: 13px;
+  border: solid 2px #6c6f73;
+  color: #6c6f73;
+  line-height: 23px;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fa-circle {
+  font-size: 10px;
+}
+
+.h-tm-btn:hover {
+  color: #999;
+  border-color: #999999;
+}
+
+.h-m {
+  position: relative;
+  background-color: #fff;
+  height: 60px;
+  vertical-align: top;
+}
+
+.h-logo {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.h-m-btn {
+  display: inline-block;
+  padding-left: 10px;
+  color: @font-color;
+}
+
+.h-m-btn > li {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.h-m-btn > li:hover {
+  color: #eb142c;
+}
+
+.h-m-mem {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  color: #aaa;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.h-m-mem-ser {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 36px;
+  padding: 8px 40px 8px 17px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid #dbdee3;
+  border-radius: 18px;
+  color: #000;
+}
+
+.h-search-i {
+  position: absolute;
+  top: 22px;
+  right: 85px;
+  font-size: 20px;
+}
+
+.h-m-mem-btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  background-color: #c5cbd3;
+  border-radius: 18px;
+  height: 36px;
+  width: 36px;
+  font-size: 25px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+}
