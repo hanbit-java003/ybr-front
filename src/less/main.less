@@ -1,6 +1,4 @@
 @import 'common.less';
-@cont-border-right: solid 20px #ddd;
-
 
 .m-top {
   width: 100%;
@@ -45,11 +43,30 @@
   margin-top: 20px;
 }
 
-.m-issue-tt {
+.m-issue-t {
+  position: relative;
+}
+
+.m-tt {
   display: inline-block;
   vertical-align: bottom;
   font-size: 25px;
   margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.m-issue-gen {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  margin-right: 30px;
+}
+
+.m-issue-tt-btn-r > input {
+  padding: 5px 10px 0px 5px;
+  vertical-align: middle;
+  margin: 0px;
 }
 
 .m-issue-tt-btn {
@@ -61,18 +78,36 @@
 
 .m-issue-tt-btn > li {
   display: inline-block;
+  width: 34px;
+  height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: transparent;
+  border: @cont-sub-border;
+  color: #dbdee3;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.m-issue-tt-btn > li:nth-child(2) {
+  background-color: #fff;
+  color: #000;
+  border-left: 0;
+}
+
+.m-issue-tt-btn > li:nth-child(2):hover {
+  border: solid 1px #000;
 }
 
 .m-issue-tt-btn-r {
   padding: 10px;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
 }
 
 .m-issue-tt-btn-n {
-  font-size: 18px;
-  padding: 5px 10px 5px 10px;
-  border: solid 1px #c5cbd3;
+  font-size: 10px;
+
 }
 
 .m-issue-m {
@@ -107,7 +142,7 @@
 
 .m-issue-txt-s {
   font-size: 14px;
-  color: #8fa6c0;
+  color: @cont-ca-gen;
   margin: 30px 0 0 20px;
 }
 
@@ -125,8 +160,187 @@
 }
 
 .m-issue-event {
+  position: relative;
   width: 100%;
   hieght: 180px;
   margin-top: 50px;
   background-size: cover;
+}
+
+.m-event-t {
+  position: relative;
+  margin-top: 60px;
+}
+
+.m-all {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  font-size: 14px;
+  padding: 9px 16px 9px 16px;
+  border: @cont-sub-border;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.m-event-m {
+  position: relative;
+}
+
+.m-event-m > li {
+  width: calc(100% / 3);
+  height: 190px;
+  display: inline-block;
+  border-right: @cont-border-right;
+  background-color: #ffffff;
+}
+
+.m-event-m > li:last-child {
+  border-right: 0;
+}
+
+.m-tops-li {
+  position: relative;
+}
+
+.m-tops-li > li {
+  width: calc(100% / 3);
+  height: 563px;
+  display: inline-block;
+  border-right: @cont-border-right;
+  background-color: #ffffff;
+  vertical-align: top;
+}
+
+.m-tops-li > li:last-child {
+  border-right: 0;
+}
+
+.m-tops-gen-tit {
+  padding: 15px 0px 10px 10px;
+  font-size: 16px;
+  border: @cont-sub-border;
+}
+
+.m-top-line {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.m-topoftop {
+  width: 100%;
+  height: 190px;
+  border: @cont-sub-border;
+  border-top: 0;
+  vertical-align: bottom;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../img/m-event.jpg);
+  position: relative;
+  cursor: pointer;
+}
+
+.m-tops1 {
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 110px;
+  color: #ffffff;
+  padding: 20px 30px 0px 30px;
+}
+
+.m-tops1-t {
+  width: 80%;
+  font-weight: 100;
+  margin-top: 120px;
+  text-align: left;
+  line-height: inherit;
+  font-size: 11px;
+  display: inline-block;
+  color: #fff;
+  vertical-align: bottom;
+  border-left: @cont-sub-border;
+  padding: 10px 5px;
+}
+
+.m-tops1-t > span {
+  text-align: left;
+  line-height: inherit;
+  font-size: 16px;
+}
+
+.m-top-gen-li > li {
+  width: 100%;
+  height: calc(100%/4);
+  border: @cont-sub-border;
+  border-top: 0;
+  cursor: pointer;
+}
+
+.m-tops-no {
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 20px 30px 0px 30px;
+}
+
+.m-tops-name {
+  width: 80%;
+}
+
+.m-tops-name-t {
+  display: inline-block;
+  color: @cont-ca-gen;
+  font-size: 11px;
+  vertical-align: top;
+  margin-top: 10px;
+  border-left: @cont-sub-border;
+  padding: 10px 5px;
+}
+
+.m-tops-name > img {
+  border-left: @cont-sub-border;
+}
+
+.m-tops-name-tt {
+  text-align: left;
+  line-height: inherit;
+  font-size: 16px;
+  color: @cont-ca-tit;
+}
+
+.m-today-c {
+  position: relative;
+}
+
+.m-today-c > li {
+  width: calc(100% / 8);
+  height: 180px;
+  display: inline-block;
+  border-left: @cont-border-right;
+  background-color: transparent;
+  vertical-align: top;
+}
+
+.m-today-c-img {
+  height: 130px;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.m-today-c-t {
+  color: @cont-ca-tit;
+  font-size: 14px;
+  height: 50px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.m-today-c-t > span {
+  color: @cont-ca-gen;
+  font-size: 12px;
 }
