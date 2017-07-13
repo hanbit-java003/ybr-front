@@ -234,11 +234,15 @@
   border: @cont-sub-border;
   border-top: 0;
   vertical-align: bottom;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url(../img/m-event.jpg);
   position: relative;
   cursor: pointer;
+}
+
+.m-topoftop-img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .m-tops1 {
@@ -321,9 +325,13 @@
   width: calc(100% / 8);
   height: 180px;
   display: inline-block;
-  border-left: @cont-border-right;
-  background-color: transparent;
+  border-right: @cont-border-right;
   vertical-align: top;
+  cursor: pointer;
+}
+
+.m-today-c > li:last-child {
+  border-right: 0px;
 }
 
 .m-today-c-img {
@@ -343,4 +351,52 @@
 .m-today-c-t > span {
   color: @cont-ca-gen;
   font-size: 12px;
+}
+
+.m-live-cont > li {
+  display: inline-block;
+  height: 270px;
+  width: calc(100% / 5);
+  vertical-align: top;
+  border-right: @cont-border-right;
+}
+
+.m-live-cont > li:nth-child(5*n) {
+  border-right: 0px;
+}
+
+.m-live-cont-ca {
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.m-live-img {
+  height: 230px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../img/m-eve1.jpg);
+  border: @cont-sub-border;
+}
+
+.m-live-cont-tt {
+  color: @cont-ca-tit;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.m-live-cont-gen {
+  color: @cont-ca-gen;
+  font-size: 12px;
+}
+
+.m-live-cont-w {
+  color: #999;
+  font-size: 12px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.m-live-cont-w:hover {
+  decoration: underline;
 }
