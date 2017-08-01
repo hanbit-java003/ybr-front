@@ -13,17 +13,3 @@ function initTopOne() {
 }
 
 initTopOne(topOne);
-
-var topLank = require('./model/top-lank');
-function initTopLank() {
-    $('.m-top-gen-li').empty();
-
-    var topLankTemplate = require('../template/top-lank.hbs');
-
-    for (var i=0; i<topLank.length; i++) {
-        var html = topLankTemplate(topLank[i]);
-
-        $('.m-top-gen-li').append(html);
-    }
-}
-initTopLank(topLank);
