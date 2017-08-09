@@ -1,29 +1,19 @@
 require('bootstrap');
 require('../less/main.less');
-require('../less/main-sub/m-top.less');
+require('../less/main-sub/m-issue.less');
 
 var common = require('./common');
 
-var hello = require('./sample/hello');
-$('.say-hello').on('click', function() {
-    alert(hello.hello($('#txt-hello').val()));
-});
+var mainIssue = require('./model/m-mainIssue');
 
-$('.goto-sub').on('click', function() {
-    location.href = 'sub.html';
-});
+function initMainIssue() {
+    var mainIssueTemplate = require('../template/m-mainIssue.hbs');
 
-var topLank = require('./model/top-lank');
+    for(var i=0; i<mainIssue.length; i++) {
+        var mainIssueHtml = mainIssueTemplate(mainIssue[i]);
 
-function initTopLank() {
-    $('.m-top-gen-li').empty();
-
-    var topLankTemplate = require('../template/top-lank.hbs');
-
-    for (var i=0; i<topLank.length; i++) {
-        var topLankHtml = topLankTemplate(topLank[i]);
-
-        $('.m-top-gen-li').append(topLankHtml);
+        $('.m-mainIssue-m').append(mainIssueHtml);
     }
 }
-initTopLank(topLank);
+
+initMainIssue();
