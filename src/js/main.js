@@ -1,12 +1,11 @@
 require('bootstrap');
 require('../less/main.less');
-require('../less/main-sub/m-issue.less');
 
 var common = require('./common');
 
 var mainIssue = require('./model/m-mainIssue');
 
-function initMainIssue() {
+function initMainIssue(mainIssue) {
     var mainIssueTemplate = require('../template/m-mainIssue.hbs');
 
     for(var i=0; i<mainIssue.length; i++) {
@@ -16,4 +15,8 @@ function initMainIssue() {
     }
 }
 
-initMainIssue();
+initMainIssue(mainIssue);
+
+function initTop() {
+    
+}
