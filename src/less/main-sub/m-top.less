@@ -39,21 +39,19 @@
 }
 
 .m-oneTop-lank {
-  position: absolute;
+  margin-top: 115px;
   display: inline-block;
   width: 20%;
   text-align: center;
   font-size: 30px;
   font-weight: 100;
   color: #ffffff;
-  padding: 20px 30px 0px 30px;
+  padding: 20px 30px 10px 30px;
+  vertical-align: top;
 }
 
 .m-oneTop-t {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 125px;
+  margin-top: 120px;
   width: 80%;
   font-weight: 100;
   text-align: left;
@@ -62,7 +60,7 @@
   display: inline-block;
   color: #fff;
   border-left: @cont-sub-border;
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 
 .m-oneTop-t > span {
@@ -71,7 +69,16 @@
   font-size: 16px;
 }
 
-.m-top-gen-li > li {
+.m-oneTop-w {
+  color: #999;
+  font-size: 14px;
+}
+
+.m-toplank {
+  height: 324px;
+}
+
+.m-toplank > li {
   width: 100%;
   height: calc(100%/4);
   border: @cont-sub-border;
@@ -79,34 +86,45 @@
   cursor: pointer;
 }
 
-.m-tops-no {
+.m-toplank-no {
+  display: inline-block;
   width: 20%;
-  vertical-align: middle;
   text-align: center;
   font-size: 30px;
   font-weight: 100;
-  padding: 20px 30px 0px 30px;
+  color: #000;
+  padding: 20px 30px 10px 30px;
+  vertical-align: top;
 }
 
-.m-tops-name {
-  width: 80%;
-}
-
-.m-tops-name-t {
+.m-toplank-name {
   display: inline-block;
+  width: 80%;
+  height: 100%;
+}
+
+.m-toplank-name-t {
+  display: inline-block;
+  width: 210px;
   color: @cont-ca-gen;
   font-size: 11px;
   vertical-align: top;
-  margin-top: 10px;
-  border-left: @cont-sub-border;
-  padding: 10px 5px;
-}
-
-.m-tops-name > img {
+  margin-top: 15px;
+  padding: 10px 0px 0px 10px;
   border-left: @cont-sub-border;
 }
 
-.m-tops-name-tt {
+.m-toplank-name-img {
+  display: inline-block;
+  align: right;
+  width: 87px;
+  height: 80px;
+  border-left: @cont-sub-border;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.m-toplank-name-t > span {
   text-align: left;
   line-height: inherit;
   font-size: 16px;
