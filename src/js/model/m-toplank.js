@@ -1,9 +1,9 @@
 module.exports = [{
-    genTitle: '',
+    genTitle: '일상',
     img: '',
-    title: '',
-    gen: '',
-    name: '',
+    title: '일상의 하루',
+    gen: '일상',
+    name: '쿠크다',
     title2: '',
     gen2: '',
     img2: '',
@@ -17,7 +17,7 @@ module.exports = [{
     gen5: '',
     img5: ''
 }, {
-    genTitle: '',
+    genTitle: '로맨스',
     img: '',
     title: '',
     gen: '',
